@@ -382,9 +382,10 @@ function createProjectPreview(incomingJSON) {
   newPreviewLink.appendChild(newPreviewElement);
   
   // image preview
-  let newPreviewThumbnail = document.createElement("IMG");
+  let newPreviewThumbnail = document.createElement("iframe");
   newPreviewThumbnail.classList.add("thumbnail");
   newPreviewThumbnail.src = incomingJSON["image"];
+  newPreviewThumbnail.allow = "autoplay;"
   newPreviewElement.appendChild(newPreviewThumbnail);
   
   // title preview
@@ -418,22 +419,23 @@ function createProjectPage(incomingJSON) {
     newProjectElement.appendChild(newProjectDescription);
   }
 
-  let newProjectImage = document.createElement("IMG");
+  let newProjectImage = document.createElement("iframe");
   newProjectImage.classList.add("pageImage");
   newProjectImage.src = incomingJSON["image"];
+  newProjectImage.allow = "autoplay;"
   newProjectElement.appendChild(newProjectImage);
   
   
 
   // multiple images AND OR VIDEO
   if (incomingJSON["image2"]){
-    let newProjectImage2 = document.createElement("IMG");
+    let newProjectImage2 = document.createElement("iframe");
     newProjectImage2.classList.add("pageImage2");
     newProjectImage2.src = incomingJSON["image2"];
     newProjectElement.appendChild(newProjectImage2);
   }
   if (incomingJSON["image3"]){
-    let newProjectImage3 = document.createElement("IMG");
+    let newProjectImage3 = document.createElement("iframe");
     newProjectImage3.classList.add("pageImage3");
     newProjectImage3.src = incomingJSON["image3"];
     newProjectElement.appendChild(newProjectImage3);
@@ -448,11 +450,11 @@ function createProjectPage(incomingJSON) {
   }
 
   if (incomingJSON["video"]){
-    let newProjectVideo = document.createElement("video");
+    let newProjectVideo = document.createElement("iframe");
     newProjectVideo.classList.add("pageVideo");
     newProjectVideo.src = incomingJSON["video"];
     newProjectVideo.controls = true;
-    newProjectVideo.autoplay = true;
+    // newProjectVideo.autoplay = true;
     newProjectElement.appendChild(newProjectVideo);
     
     // remove image if video exists
@@ -492,20 +494,20 @@ function createProjectPage(incomingJSON) {
     newProjectElement.appendChild(newProjectProcess);
     
     
-    let newProjectProcess1 = document.createElement("IMG");
+    let newProjectProcess1 = document.createElement("iframe");
     newProjectProcess1.classList.add("pageProcess1");
     newProjectProcess1.src = incomingJSON["process1"];
     newProjectElement.appendChild(newProjectProcess1);
     
     if(incomingJSON["process2"]){
-      let newProjectProcess2 = document.createElement("IMG");
+      let newProjectProcess2 = document.createElement("iframe");
       newProjectProcess2.classList.add("pageProcess2");
       newProjectProcess2.src = incomingJSON["process2"];
       newProjectElement.appendChild(newProjectProcess2);
     }
     
     if(incomingJSON["process3"]){
-      let newProjectProcess3 = document.createElement("IMG");
+      let newProjectProcess3 = document.createElement("iframe");
       newProjectProcess3.classList.add("pageProcess3");
       newProjectProcess3.src = incomingJSON["process3"];
       newProjectElement.appendChild(newProjectProcess3);
@@ -513,11 +515,11 @@ function createProjectPage(incomingJSON) {
     
     //VIDEO
     if (incomingJSON["processVideo"]){
-      let newProjectProcessVideo = document.createElement("video");
+      let newProjectProcessVideo = document.createElement("iframe");
       newProjectProcessVideo.classList.add("pageProcessVideo");
       newProjectProcessVideo.src = incomingJSON["processVideo"];
       newProjectProcessVideo.controls = true;
-      newProjectProcessVideo.autoplay = true;
+      // newProjectProcessVideo.autoplay = true;
       newProjectElement.appendChild(newProjectProcessVideo);
     }
   }
