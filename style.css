@@ -284,7 +284,7 @@ body::-webkit-scrollbar {
 
     background-color: white;
     border-bottom: 2px solid black;
-    height: 10vh;
+    height: 10.5vh;
 
   }
   .websiteInfo a{
@@ -295,6 +295,7 @@ body::-webkit-scrollbar {
   }
   .websiteInfo h2{
     font-size: 4vw;
+/*    margin-bottom: 2vh;*/
   }
 
 

@@ -204,7 +204,7 @@ let portfolioCollection = [
     "description" : "In this short film, I delve into the significance of mental health and well-being, emphasizing the importance of taking time for oneself. Amidst the chaos of city life, individuals often find themselves caught up in the fast-paced rhythm, leaving little room for self-reflection. The film aims to capture the transformative journey of those who take a moment to step back, acknowledging the profound shifts in emotion and stress just a few steps away.",
     "processDescription": "",
 
-    "image" : "",
+    "image" : "https://drive.google.com/file/d/1nlBDkKEtenDLMAT_B33Jat1-QHhZjvYS/view?usp=sharing",
     "image2": "",
     "image3": "",
     
@@ -240,7 +240,7 @@ let portfolioCollection = [
     "description" : "",
     "processDescription": "",
     
-    "image" : "https://drive.google.com/file/d/1-3YrmCKQgQBNHrLu68FvtsBJFS8Ty4rY/preview",
+    "image" : "https://drive.google.com/file/d/1-3YrmCKQgQBNHrLu68FvtsBJFS8Ty4rY/view?usp=sharing",
     "image2": "",
     "image3": "",
     
