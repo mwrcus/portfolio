@@ -1,13 +1,17 @@
+@import url('https://fonts.cdnfonts.com/css/le-murmure');
 @font-face {
   font-family: 'ClashGrotesk';
   src: url('fonts/ClashGrotesk-Regular.woff') format('woff'),
        url('fonts/ClashGrotesk-Regular.woff2') format('woff2');
+
 }
 
 /*'global variables'*/
 :root {
-  --bar-width: 33.5%;
-  --containerSpacing: 5vmin;
+  --bar-width: 30%;
+  --containerSpacing: 4vmin;
+  --nav-space: 32%;
+  --padding: 2vh;
 }
 
 * {
@@ -56,7 +60,6 @@ body::-webkit-scrollbar {
 #entirePage{
   display: flex;
 /*  flex-direction: row-reverse;*/
-  padding-top: 3vh;
 
 }
 
@@ -69,32 +72,40 @@ body::-webkit-scrollbar {
   position: fixed;
 
   width: var(--bar-width);
-  height: 93.5vh;
+  height: 100%;
   overflow-y: auto;
   overflow: hidden;
+
+  padding-top: var(--padding);
+  padding-bottom: 4vh;
 
 /*  text-align: right;*/
 
   padding-right: var(--containerSpacing);
   padding-left: var(--containerSpacing);
 
+/*  border-right: 2px solid black;*/
+
 }
 
 .mainContainer{
   flex-grow: 1;
-  padding-left: var(--bar-width);
+  padding-left: var(--nav-space);
 /*  padding-right: var(--bar-width);*/
   padding-right: var(--containerSpacing);
 /*  padding-left: var(--containerSpacing);*/
-  padding-bottom: 2.8vmin;
+  padding-bottom: var(--padding);
+  padding-top: 2.7vh;
 
 }
 
-
+.websiteInfo{
+  text-align: center;
+}
 .social{
 /*  margin-top: 8vmin;*/
   display: flex;
-  flex-direction: column;
+/*  flex-direction: column;*/
   gap: 10px;
 
 }
@@ -102,8 +113,11 @@ body::-webkit-scrollbar {
 .navigation{
 /*  margin-top: 8vmin;*/
   display: flex;
-  flex-direction: column;
-  gap: 1.4vmin;
+/*  flex-direction: column;*/
+  flex-wrap: wrap;
+  gap: 3vmin;
+/*  text-align: center;*/
+justify-content: center;
 
 }
 
@@ -133,9 +147,10 @@ body::-webkit-scrollbar {
 }
 
 .websiteInfo a{
-  font-size: 5.3vmin;
+  font-size: 10vmin;
   font-weight: normal;
   text-decoration: none;
+  font-family: 'Le Murmure', sans-serif;
 
 }
 
@@ -154,21 +169,21 @@ body::-webkit-scrollbar {
 }
 
 .social a, .myself a{
-  font-size: 2.6vmin;
+  font-size: 2.5vmin;
   text-decoration: none;
 }
 
 .navigation a{
   font-size: 3.5vmin;
   text-decoration: none;
-/*  text-align: left;*/
+/*  text-align: center;*/
 }
 
 
 
 
 #navCategory{
-  font-size: 2vmin;
+  font-size: 2.5vmin;
 }
 
 
@@ -200,7 +215,33 @@ body::-webkit-scrollbar {
 
 
 /*DISPLAY STYLING MAIN CONTAINER---------------------------*/
+.myself {
+    font-size: 6vw;
+    display: flex;
+    text-align: center;
+/*    flex-direction: column;*/
+    justify-content: center;
+    flex-wrap: wrap;
+/*    border: 2px solid black;*/
+    margin-top: 2vh;
+    gap: 2vh;
+/*    overflow-x: auto;*/
+  }
 
+  .myself a{
+    border: 2px solid black;
+    border-radius: 10px;
+    width: 100%;
+    padding: 0.8vh;
+  }
+
+  .social a{
+    border: 2px solid black;
+    border-radius: 10px;
+    width: 100%;
+    padding: 0.9vh;
+    text-align: center;
+  }
 
 /*mobile and below*/
 @media only screen and (max-width: 490px){
@@ -314,26 +355,7 @@ body::-webkit-scrollbar {
 
 
 /*hidden*/
-  .myself{
-    font-size: 6vw;
-    display: flex;
-    text-align: center;
-/*    flex-direction: column;*/
-    justify-content: center;
-    flex-wrap: wrap;
-/*    border: 2px solid black;*/
-    margin-top: 2vh;
-    gap: 2vh;
-/*    overflow-x: auto;*/
-  }
-
-  .myself a{
-    border: 2px solid black;
-    border-radius: 10px;
-    width: 100%;
-    padding: 1vh;
-
-  }
+  
 
   .navigation{
     display: flex;
@@ -342,6 +364,7 @@ body::-webkit-scrollbar {
 
     margin-top: 5vh;
     align-items: center;
+
   }
 
   #navCategory {
@@ -357,6 +380,7 @@ body::-webkit-scrollbar {
   #pageTitleMobile{
     font-size: 10vw;
     align-items: center;
+    text-align: center;
   }
 
   body {
@@ -411,7 +435,7 @@ body::-webkit-scrollbar {
 }
 
 h2#pageTitle {
-  margin-bottom: 3vw;
+/*  margin-bottom: 0vw;*/
 
 }
 
@@ -424,6 +448,7 @@ h2#pageTitle {
   color: red;
   white-space: normal;
   width: 100%;
+  text-align: center;
 }
 
 @media (max-width: 992px){
@@ -489,6 +514,7 @@ h2#pageTitle {
 }
 
 .thumbnail {
+  margin-top: 1.6vh;
   width: 100%;
   height: 31vh;
   object-fit: cover;
@@ -548,7 +574,7 @@ h2#pageTitle {
   color: black;
   border: 2px solid black;
   border-radius: 10px;
-  padding: 3px;
+/*  padding: 0.5vh;*/
   text-align: center;
   margin-bottom: 2vh;
 
