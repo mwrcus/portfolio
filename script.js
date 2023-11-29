@@ -31,13 +31,14 @@
 const observer = lozad('.thumbnail');
 observer.observe();
 
+let coursesListElement;
 
 let pageTitleElement;
 let outputGridElement;
 let projectDisplayElement;
 
 let portfolioCollection = [
-  // CATEGORIES: code, visual, film, photo, audio, prototype, 3D, work, ARCHIVE
+  // CATEGORIES: code, visual, film, photo, audio, prototype, 3D, work, ARCHIVE, EXPERIMENT
   // ID: url name
   
   // ADD IN ORDER MOST RECENT BELOW............
@@ -73,8 +74,8 @@ let portfolioCollection = [
     "title" : "Music Magazine",
     "category" : "visual",
     "id": "rhythmrhymes-magazine",
-    "description" : "",
-    "processDescription": "I created a mockup of a music magazine cover and grid layouts using Adobe InDesign. In graphic design, it's crucial to convey a message visually. A music magazine serves as a great example, demonstrating how hierarchy and visual appeal work together. After having done research specifically on magazine cover design, I realized the influence on the audience. Despite the information overload, they effectively differentiate sections and themes through fonts, colors, and bold elements. My goal was to ensure a cohesive flow in my design, where everything comes together smoothly. The main focus is on capturing the viewer's attention immediately, emphasizing the magazine's title and the featured artist, Blood Orange.",
+    "description" : "I created a mockup of a music magazine cover and grid layouts using Adobe InDesign. In graphic design, it's crucial to convey a message visually. A music magazine serves as a great example, demonstrating how hierarchy and visual appeal work together. After having done research specifically on magazine cover design, I realized the influence on the audience. Despite the information overload, they effectively differentiate sections and themes through fonts, colors, and bold elements. My goal was to ensure a cohesive flow in my design, where everything comes together smoothly. The main focus is on capturing the viewer's attention immediately, emphasizing the magazine's title and the featured artist, Blood Orange.",
+    "processDescription": "",
 
     "image" : "https://i.imgur.com/F16vy98.png",
     "image2": "https://i.imgur.com/TO6IRaj.png",
@@ -149,8 +150,8 @@ let portfolioCollection = [
   "title" : "Storefront Sign",
   "category" : "visual",
   "id": "psychichreadingsign",
-  "description" : "",
-  "processDescription": "This storefront sign, conceived for a client who owns a small psychic business in Brooklyn, serves as a compelling and attention-grabbing poster. It encapsulates essential information such as the business's location and contact details, along with a concise representation of its four primary services. The color palette, featuring shades of purple and pink, aligns with the prevalent themes often associated with the psychic industry.\n\nA distinctive touch in the design is the incorporation of a 'logo' that symbolizes a crystal ball with a chakra pose as its foundational support. This visual element serves to intricately connect the diverse range of services offered, providing a symbolic representation of the business's essence. Furthermore, the inclusion of the owner's name, Chelsea, seamlessly blends with the business name, adding a personal touch to the overall aesthetic.",
+  "description" : "This storefront sign, conceived for a client who owns a small psychic business in Brooklyn, serves as a compelling and attention-grabbing poster. It encapsulates essential information such as the business's location and contact details, along with a concise representation of its four primary services.",
+  "processDescription": "The color palette, featuring shades of purple and pink, aligns with the prevalent themes often associated with the psychic industry. A distinctive touch in the design is the incorporation of a 'logo' that symbolizes a crystal ball with a chakra pose as its foundational support. This visual element serves to intricately connect the diverse range of services offered, providing a symbolic representation of the business's essence. Furthermore, the inclusion of the owner's name, Chelsea, seamlessly blends with the business name, adding a personal touch to the overall aesthetic.",
 
   "image" : "https://i.imgur.com/tCllnT7.png",
   "image2": "",
@@ -199,8 +200,8 @@ let portfolioCollection = [
   "title" : "Political Poster",
   "category" : "visual",
   "id": "politicalposter",
-  "description" : "",
-  "processDescription": "Within design, its influential capacity is noteworthy; this poster delves into the political realm, emphasizing how design can and should make powerful statements. Fueled by my passion for a sustainable future and investments, I crafted a poster for NYC, offering a glimpse into what a ‘bright’ and ‘green’ future might entail. The stark contrast between gray buildings shrouded in polluted clouds at the bottom and the aspiration to construct a better future conveys the possibility of harmonizing nature and urbanization. This design genuinely encapsulates and imagines a distinct ‘future.’",
+  "description" : "Within design, its influential capacity is noteworthy; this poster delves into the political realm, emphasizing how design can and should make powerful statements.",
+  "processDescription": "Fueled by my passion for a sustainable future and investments, I crafted a poster for NYC, offering a glimpse into what a ‘bright’ and ‘green’ future might entail. The stark contrast between gray buildings shrouded in polluted clouds at the bottom and the aspiration to construct a better future conveys the possibility of harmonizing nature and urbanization. This design genuinely encapsulates and imagines a distinct ‘future.’",
 
   "image" : "https://i.imgur.com/YWvewkv.jpg",
   "image2": "",
@@ -320,6 +321,30 @@ let portfolioCollection = [
 //   "button2":""
 // },
 
+// {
+//   "title" : "Model Digitals",
+//   "category" : "photography",
+//   "id": "modeldigitals",
+//   "description" : "",
+//   "processDescription": "",
+
+//   "image" : "https://i.imgur.com/Z21e4Ys.jpg",
+//   "image2": "",
+//   "image3": "",
+  
+//   "process1":"",
+//   "process2":"",
+//   "process3":"",
+//   "processVideo":"",
+  
+//   "tags": "#canon #photoshop #lightroom",
+//   "link": "",
+//   "process": "",
+//   "video":"",
+
+//   "button1":"",
+//   "button2":""
+// },
   
   {
     "title" : "Experimental Portrait",
@@ -369,73 +394,63 @@ let portfolioCollection = [
   "button1":"PITCH",
   "button2":"DESIGN REPORT"
 }
-
-
-
   
 ];
 
-document.addEventListener("DOMContentLoaded", function(){
-  
-  /* Get page element references */
+
+
+
+document.addEventListener("DOMContentLoaded", function() {
+
   pageTitleElement = document.getElementById("pageTitle");
   outputGridElement = document.getElementById("outputGrid");
   projectDisplayElement = document.getElementById("projectDisplay");
-  
-  /* Get URL Params */
+
   let queryString = window.location.search;
   let urlParams = new URLSearchParams(queryString);
   let urlSection = urlParams.get('section');
   let urlID = urlParams.get('id');
-  
-  if (urlSection != "item") { // display project previews in grid
 
-    //setting page titles
-    
-    
+  if (urlSection != "item") { //display project previews in grid
+
+    let projectsFound = false;
+
     if (urlSection == "code") {
       pageTitleElement.innerText = "CODING PROJECTS";
-    }
-    else if (urlSection == "visual") {
+    } else if (urlSection == "visual") {
       pageTitleElement.innerText = "VISUAL PROJECTS";
-    }
-    else if (urlSection == "film") {
+    } else if (urlSection == "film") {
       pageTitleElement.innerText = "FILM PROJECTS";
-    }
-    else if (urlSection == "photography") {
+    } else if (urlSection == "photography") {
       pageTitleElement.innerText = "PHOTOGRAPHY PROJECTS";
-    }
-    else if (urlSection == "audio") {
+    } else if (urlSection == "audio") {
       pageTitleElement.innerText = "AUDIO PROJECTS";
-    }
-    else if (urlSection == "prototype") {
+    } else if (urlSection == "prototype") {
       pageTitleElement.innerText = "PROTOTYPING PROJECTS";
-    }
-    else if (urlSection == "3d") {
+    } else if (urlSection == "3d") {
       pageTitleElement.innerText = "3D PROJECTS";
-    }
-    else if (urlSection == "archive") {
+    } else if (urlSection == "archive") {
       pageTitleElement.innerText = "ARCHIVED PROJECTS";
-    }
-    else if (urlSection == "work") {
+    } else if (urlSection == "work") {
       pageTitleElement.innerText = "WORK EXPERIENCE";
+    } else if (urlSection == "experiment") {
+      pageTitleElement.innerText = "EXPERIMENTATIONS";
     }
-    
-    
-    
-    
-    
-    // creating thumbnails
+
+    //thumbnails
     for (let i = 0; i < portfolioCollection.length; i++) {
-      if (portfolioCollection[i]["category"] == urlSection || urlSection == "" || urlSection == null){
+      if (portfolioCollection[i]["category"] == urlSection || urlSection == "" || urlSection == null) {
         createProjectPreview(portfolioCollection[i]);
+        projectsFound = true;
       }
     }
-    
-  }
-  
-  else {
-    // displaying individual projects
+
+    //display a message if no projects are found
+    if (!projectsFound) {
+      displayNoProjectsMessage();
+    }
+
+  } else { //display individual projects
     for (let i = 0; i < portfolioCollection.length; i++) {
       if (portfolioCollection[i]["id"] == urlID) {
         createProjectPage(portfolioCollection[i]);
@@ -444,8 +459,17 @@ document.addEventListener("DOMContentLoaded", function(){
   }
 
   initLibraries();
-  
+
+  function displayNoProjectsMessage() {
+    const messageElement = document.createElement('p');
+
+    messageElement.innerText = "In the works. Check back soon!";
+    messageElement.classList.add("description");
+    outputGridElement.appendChild(messageElement);
+  }
+
 });
+
 
 
 
@@ -639,6 +663,7 @@ function createProjectPage(incomingJSON) {
 }
 
 
+// LIBRARY-------------------------------------------------------------
 function initLibraries() {
   
 
@@ -670,3 +695,94 @@ function initLibraries() {
   });
   
 }
+
+
+// SKILLS PAGE------------------------------------------------------------
+
+document.addEventListener('DOMContentLoaded', function() {
+ 
+/*
+
+ {
+      "course": "",
+      "concepts":"",
+      "skills": ""
+}
+
+*/
+
+  let coursesCollection = [
+
+    {
+      "course": "Introduction to Engineering and Design",
+      // "concepts":"The course provided a comprehensive exploration of engineering, spanning its historical evolution, philosophical foundations, methodologies, and contemporary applications. Centered on practical learning, the course emphasized experimentation and a semester-long collaborative design project. A focal point was the enhancement of essential communication skills in the engineering field. By nurturing teamwork, project management, and design capabilities, Introduction to Engineering established a foundational understanding applicable across diverse sectors of the engineering profession.",
+      "skills": "Autodesk Fusion 360, Autodesk Revit, Arduino UNO, Circuitry, Design Reporting, Budgeting"
+},
+     {
+      "course": "Introduction to Programming and Problem Solving",
+      "concepts":"",
+      "skills": "Python"
+},
+{
+      "course": "Creative Coding",
+      "concepts":"",
+      "skills": "JavaScript, APIs, Arduino UNO"
+},
+{
+      "course": "Still and Moving Images",
+      "concepts":"",
+      "skills": "Outlining, Storyboarding, Framing, Filming, Color Grading, Adobe Premiere Pro"
+},
+{
+      "course": "Audio Foundations Studio",
+      "concepts":"",
+      "skills": "REAPER"
+},
+{
+      "course": "Visual Foundations Studio",
+      "concepts":"",
+      "skills": "Adobe Photoshop, Adobe Illustrator, Adobe InDesign, Figma"
+},
+{
+      "course": "Ideation and Prototyping",
+      "concepts":"",
+      "skills": "Ideation, Brainstorming, Sketching, Iterating, Prototyping (Cardboard, 3D, Wireframe)"
+},
+{
+      "course": "Web Development",
+      "concepts":"",
+      "skills": "Git, HTML, CSS, JavaScript, JS Libraries"
+},
+
+
+
+
+  ];
+
+  let coursesListElement = document.getElementById('coursesList');
+
+for (let i = 0; i < coursesCollection.length; i++){
+  let courseData = coursesCollection[i];
+
+    let courseElement = document.createElement('div');
+    courseElement.classList.add('specificCourse');
+
+    let headingElement = document.createElement('h4');
+    headingElement.textContent = courseData.course;
+
+    // let conceptsElement = document.createElement('p');
+    // conceptsElement.classList.add('description');
+    // conceptsElement.textContent = "" + courseData.concepts;
+
+    let skillsElement = document.createElement('p');
+    skillsElement.classList.add('description');
+    skillsElement.innerHTML = "&#10551; " + courseData.skills;
+
+    courseElement.appendChild(headingElement);
+    // courseElement.appendChild(conceptsElement);
+    courseElement.appendChild(skillsElement);
+
+    coursesListElement.appendChild(courseElement);
+  };
+});
+

@@ -10,8 +10,9 @@
 :root {
   --bar-width: 30%;
   --containerSpacing: 4vmin;
-  --nav-space: 32%;
+  --nav-space: 30%;
   --padding: 2vh;
+  --color: #667F39;
 }
 
 * {
@@ -55,6 +56,10 @@ body::-webkit-scrollbar {
 /*above mobile*/
 @media (min-width: 490px){
 
+  #aboutLinksMobile{
+    display: none;
+  }
+
 
 
 #entirePage{
@@ -64,6 +69,7 @@ body::-webkit-scrollbar {
 }
 
 .sideBar{
+  z-index: 1;
 /*  background-color: green;*/
   display: flex;
   flex-direction: column;
@@ -96,6 +102,13 @@ body::-webkit-scrollbar {
 /*  padding-left: var(--containerSpacing);*/
   padding-bottom: var(--padding);
   padding-top: 2.7vh;
+
+
+  opacity: 0;
+  animation: appear 2s forwards;
+
+
+
 
 }
 
@@ -161,7 +174,7 @@ justify-content: center;
 }
 
 .websiteInfo a:hover{
-  color: red;
+  color: var(--color);
 }
 
 .websiteInfo h2{
@@ -203,7 +216,7 @@ justify-content: center;
 }
 
 .navigation a:hover, .social a:hover, .myself a:hover{
-  color: red;
+  color: var(--color);
 }
 
 
@@ -242,6 +255,9 @@ justify-content: center;
     padding: 0.9vh;
     text-align: center;
   }
+
+
+
 
 /*mobile and below*/
 @media only screen and (max-width: 490px){
@@ -291,6 +307,7 @@ justify-content: center;
 
   .thumbnail{
     height: 25vh !important;
+    margin: 0.6vh !important;
   }
 
   .link, .code{
@@ -324,7 +341,7 @@ justify-content: center;
 
     background-color: white;
     border-bottom: 2px solid black;
-    height: 10.5vh;
+    height: 11vh;
 
   }
   .websiteInfo a{
@@ -420,7 +437,9 @@ justify-content: center;
 } 
 
 
-
+.aboutLinks{
+    margin-top: 1vh;
+  }
 
 
 
@@ -445,7 +464,7 @@ h2#pageTitle {
 
 #pageTitle{
   text-transform: uppercase;
-  color: red;
+  color: var(--color);
   white-space: normal;
   width: 100%;
   text-align: center;
@@ -490,7 +509,7 @@ h2#pageTitle {
 .previewTags{
   text-align: right;
   font-size: 2vmin;
-  color: red;
+  color: var(--color);
 }
 
 /*main preview elements*/
@@ -531,7 +550,8 @@ h2#pageTitle {
   width: 100%;
 /*  height: auto;*/
   object-fit: contain;
-  margin-bottom: 3vh;
+  margin-top: 2vh;
+  margin-bottom: 2vh;
   border-radius: 6px;
   display: flex;
   border: 2px solid black;
@@ -555,7 +575,7 @@ h2#pageTitle {
 }
 
 .description {
-  margin-bottom: 3vh;
+/*  margin-bottom: 2vh;*/
   text-align: justify;
   line-height: 2em;
   font-size: 1.5vw;
@@ -585,7 +605,40 @@ h2#pageTitle {
   letter-spacing: 1px;
   transition: color 0.5s, letter-spacing 2s, border 0.5s;
   transform-origin: right;
-  color: red;
-  border: 2px solid red ;
+  color: var(--color);
+  border: 2px solid var(--color) ;
 
+}
+
+
+/*---------SKILLS COURSES PAGES---------*/
+#coursesList{
+  display: flex;
+  flex-direction: column-reverse;
+  gap: 2vmax;
+}
+
+.specificCourse{
+  padding-bottom: 1vh;
+/*  border-radius: 10px;*/
+/*  border: 2px solid black;*/
+  margin-top: 1vh;
+
+
+}
+
+.specificCourse h4{
+/*  text-align: center;*/
+  color: var(--color);
+  font-weight: normal;
+  margin-bottom: 1vh;
+  font-size: 1.8vmax;
+}
+
+/*PAGE ANIMATION*/
+
+@keyframes appear {
+    to {
+        opacity: 1;
+    }
 }
