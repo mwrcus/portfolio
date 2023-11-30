@@ -48,22 +48,26 @@ let portfolioCollection = [
     "title" : "Task Management App",
     "category" : "prototype",
     "id": "taskulptor",
-    "description" : "One of the critical aspects of being a student is maintaining organization around the clock to stay on top of daily tasks and self-management. I consistently rely on the Apple Notes app, even though it's not designed for task management, as I have yet to find another app that stands out to me. The basic reminders app is also challenging to work with.\n\nIn this project, I undertook comprehensive research, ideation, and prototyping to develop a minimum viable task management app that addresses the shortcomings of existing applications. The goal was to create a solution that goes beyond conventional tasking functionalities. Notably, my emphasis extended beyond task tracking, honing in on personalization and task completion satisfaction. This strategic focus was intended to provide a unique user experience tailored to individual needs and preferences, ensuring an effective and satisfying approach to staying on track.",
-    "processDescription": "To develop a more intuitive app, I initiated the process with user research, interviewing two students about their task management. Interestingly, both students used the Notes App for its simplicity and the satisfying feeling of completing a task when the bubble circled in. However, they expressed a desire for better integration of organizational, process checking, and priority features. This feedback sparked the ideation for my application.\n\nThe application prototype was kept at a minimum viable product - simple and easy to navigate. It consists of three main pages. The hub displays all tasks due for the week, including priorities, with the add task button conveniently placed at the top for instant access. The course library categorizes tasks by different courses, facilitating semester-long scheduling. The settings hub controls personalization, emphasizing the importance of meeting users' needs.\n\nThe prototyping process underwent four iterative stages. The initial sketches on paper focused on understanding the app's flow and meeting design requirements. Moving to Figma for high-fidelity prototyping in the second iteration, I learned the importance of consistency by establishing components and variants. The third iteration introduced color and enhanced features, emphasizing 'task completion satisfaction.' The fourth iteration refined the grid of tasks, offering both vertical and horizontal alignment options in task organization settings. A significant challenge encountered in Figma was navigation actions. While I initially aimed for a press-and-hold task detail view, I had to adapt with an ellipsis menu, offering options to view, edit, and delete tasks.\n\nThroughout these iterations, user feedback and the understanding of user needs remained central to refining the app's design and functionality. For future development plans, I would invest in additional research on user experiences with the overall feel of the app and its features to ensure its intuitiveness.",
+    "description" : "One of the critical aspects of being a student is maintaining organization around the clock to stay on top of daily tasks and schoolwork. In response to these prevalent challenges faced by students, I embarked on the development of a task management app with a focus on addressing the shortcomings of existing applications.\n\nIn this project, I undertook comprehensive research, ideation, and prototyping to develop a minimum viable product. The goal was to create a solution that goes beyond conventional tasking functionalities. Notably, my emphasis extended beyond task tracking, honing in on personalization and the satisfaction of task completion as rewarding. This focus intends to provide a unique user experience tailored to individual students’ needs and preferences, ensuring an effective and satisfying approach to staying on track.",
+    "processDescription": "USER RESEARCH. I started the process with user research, interviewing two students about their tasking habits and preferences. Interestingly, both students used the Apple Notes App for its simplicity and efficiency (i.e., quick to jot reminders) and the satisfaction of completing a task by filling in the checklist bubble. However, they expressed a desire for better integration of organizational, process checking, and priority tasking features. IDEATION. This feedback sparked the ideation for my app. I kept in mind the minimum viable product of being able to task, track, and complete tasks, and my first thought was to start simple and make the app easily navigable. I created a flowchart to focus on the main actions that would drive the user experience around the app and set out to have three main pages.\n\n PROTOTYPING. I took my flowchart onto paper, where I sketched and created a basic low-fidelity layout I assumed would be simple enough to understand from the user’s perspective of navigating around. The home menu ‘hub’ displays all the tasks due for different days and weeks, including a prioritized tasks category (also contains late tasks). I conveniently placed the add task button at the top of the page for immediate access once opening the application, from understanding the convenience of features that competitors already hold. The course library categorizes tasks by different courses, facilitating semester-long scheduling by adding and organizing multiple tasks simultaneously. The settings hub controls personalization, emphasizing the importance of meeting users' needs however they want to task effectively. The following sketch was a higher-fidelity paper prototype to understand the implementation of pop-up features and the content displayed in the app.",
+    "processDescription2":"Moving to Figma, an application I was unfamiliar with for high-fidelity prototyping in the second iteration, I learned the importance of establishing components and variants for consistency when I initially copied and pasted my work throughout the prototype. I realized how quite time-consuming and inefficient it would be. So, coming into my second iteration within Figma, I completely reimagined the application and wanted a different feel. I introduced color and enhanced the design of features, especially emphasizing 'task completion satisfaction.’ I introduced individual tasks as squares on a grid instead of a basic checklist so that completing a task would become more than just a tap, giving life to the whole task. USER TESTING. I tested my prototype with students, noted their behaviors and challenges with the experience, and sought to make changes from there. REFINEMENT. The third iteration refines the grid layout of tasks, making it horizontal instead of horizontal alignment to reduce cognitive overload and better comprehend the categorization of tasks. CHALLENGES. A significant challenge encountered in Figma was using its navigation actions in wireframing. While initially aiming for a press-and-hold task detail view in my second iteration, I had to adapt with an ellipsis menu in my third, offering options to view, edit, and delete tasks into one experience.",
+    "processDescription3":"Throughout these iterations, user feedback and the understanding of user needs remained central to refining the app's design and functionality. For future development plans, I would invest in additional research on user experiences with the overall feel of the app and its features to ensure its persistent intuitiveness for student task tracking as a user-centric design.",
 
     "image" : "https://i.imgur.com/ywzE1XO.png",
-    "image2": "https://i.imgur.com/nBxvNgM.png",
+    "image2": "https://i.imgur.com/kOQhRSP.png",
     "image3": "",
     
-    "process3":"",
-    "process1":"https://i.imgur.com/jjkhBmb.png",
-    "process2":"https://i.imgur.com/OpeaNYr.png",
+    "process1":"https://i.imgur.com/nBxvNgM.png",
+    "process2":"https://i.imgur.com/4eMuetX.png",
+    "process3":"https://i.imgur.com/ODx3bfc.png",
+    "process4":"https://i.imgur.com/OpeaNYr.png",
+    "process5":"https://i.imgur.com/lDR3gVv.png",
     
     "tags": "#ideation #uiux #figma",
     "link": "https://www.figma.com/proto/3TWozf0G2iZIoRsMr3EPMK?embed_host=share&kind=&mode=design&node-id=228-1646&page-id=0%3A1&scaling=scale-down&starting-point-node-id=228%3A1925&t=AxrDalixv5srzChO-1&type=design&viewport=-2794%2C209%2C0.35",
     "blueprint": "",
     "video":"",
-    "processVideo":"https://drive.google.com/file/d/1mGyM4DPFj6hfFoYHNOF6_rBg632BgRu-/preview",
+    "processVideo2":"https://drive.google.com/file/d/1mGyM4DPFj6hfFoYHNOF6_rBg632BgRu-/preview",
 
     "button1":"PROTOTYPE",
     "button2":""
@@ -245,6 +249,31 @@ let portfolioCollection = [
     "button1":"",
     "button2":"OUTLINE"
   },
+
+//   {
+//   "title" : "Sound Collage",
+//   "category" : "audio",
+//   "id": "",
+//   "description" : "",
+//   "processDescription": "",
+
+//   "image" : "",
+//   "image2": "",
+//   "image3": "",
+  
+//   "process1":"",
+//   "process2":"",
+//   "process3":"",
+//   "processVideo":"",
+  
+//   "tags": "",
+//   "link": "",
+//   "process": "",
+//   "video":"",
+
+//   "button1":"",
+//   "button2":""
+// },
   
   {
     "title" : "Cosmicollide Game",
@@ -321,33 +350,9 @@ let portfolioCollection = [
 //   "button2":""
 // },
 
-// {
-//   "title" : "Model Digitals",
-//   "category" : "photography",
-//   "id": "modeldigitals",
-//   "description" : "",
-//   "processDescription": "",
-
-//   "image" : "https://i.imgur.com/Z21e4Ys.jpg",
-//   "image2": "",
-//   "image3": "",
-  
-//   "process1":"",
-//   "process2":"",
-//   "process3":"",
-//   "processVideo":"",
-  
-//   "tags": "#canon #photoshop #lightroom",
-//   "link": "",
-//   "process": "",
-//   "video":"",
-
-//   "button1":"",
-//   "button2":""
-// },
   
   {
-    "title" : "Experimental Portrait",
+    "title" : "Experimental Portrait Film",
     "category" : "film",
     "id": "experimentalportrait",
     "description" : "Embarking on this avant-garde exploration, my goal was to craft a meaningful portrayal of someone dear to me: my sister. Through a blend of sound, visuals, and effects, I aimed to take the audience on a journey, free from the confines of storyboarding. Instead, opting for a purely experimental approach, allowing the film to unfold organically. Navigate this unique tapestry of emotion, where each frame paints a vivid portrait of my sister's essence.",
@@ -374,16 +379,19 @@ let portfolioCollection = [
   "title" : "Self-Sustaining Terrarium",
   "category" : "prototype",
   "id": "indeplant",
-  "description" : "With the world's population on the rise and urbanization claiming more land, the challenges for farming are evident. There's less space, and farming needs to be even more efficient than our current technology allows. To address this, I teamed up with a group of engineers. Drawing inspiration from vertical farming, we started small with a self-sustaining terrarium we named the Indeplant – an independent planting solution.",
-  "processDescription":"The prototype utilizes Arduino UNO (circuit board using a C++ language variation) to automate all components, ultraviolet artificial lighting for photosynthesis, a moisture sensor to detect critical water levels, and a pump for cohesive operation. The pump draws water from a compartment behind the terrarium, connecting a tube to consistently water the plant. Placing the moisture sensor at the bottom of the tank allows it to read the soil's humidity and print out the data.\n\nIn my role as the chief design officer for this project, I used CAD software to design both the team’s logo and the prototype, laying the foundation for the group to start the product assembly. Throughout the project, I honed practical strategies for thinking outside the box when realizing the Indeplant and incorporating its technical and physical components. Multiple iterations of the 3D model were essential to overcome new challenges, and along the way, I advanced my skills in Autodesk Fusion 360. Our team worked efficiently and well together as one person managed the budget, another handled the coding, and I focused on the design. We all contributed ideas and research during our meetings and made changes as needed. This collaboration was crucial to bringing the Indeplant to life.\n\nThe project faced significant challenges, primarily regarding time and incorporating all necessary elements to realize our vision. Constrained by a $100 budget, our team grappled with how to build from the ground up. The original prototype included glass encasing and cornering LED lights to avoid molding and unsanitary conflicts, especially with technological parts. However, we realized that the space versus technological components weren't aligned, prompting us to add more behind the casing. To meet our budget, we had to make adjustments – changing the glass encasing to plastic and finding an alternative placement for the LED lights on the roof. In this scenario, functionality and cost efficiency took precedence over aesthetics, ensuring the creation of a working prototype for our final pitch.\n\nFor additional details about the ideation, process, challenges, outcome, pitch, and future developments, you can find more information at the provided links.",
+  "description" : "With the world's population on the rise and urbanization claiming more land, the challenges for farming are evident. There's less space, and agriculture needs to be even more efficient than our current technology allows. To address this, I teamed up with a group of engineers. Drawing inspiration from vertical farming, we started small with a self-sustaining terrarium named the Indeplant – an independent planting solution. Our target users identified for the prototype are individuals interested in sustainable, space-efficient planting solutions; however, the project aims to reach a wider audience, specifically in the agricultural field, like farmers, as a viable, efficient, and automated solution to both combat and adapt to these pressing environmental and societal issues.",
+  "processDescription":"In my role as the chief design officer for this project, I used CAD software to design both the team’s logo and the prototype, laying the foundation for the group to start the product assembly. I first sketched out ideas; the first idea was to develop a solar-powered and automated flowerpot to water a plant. Through more research and conceptualizing, we shifted towards a terrarium as a more efficient solution, recreating ideal and humid growing conditions–this is important to reflect a changing world where technology can facilitate time-consuming tasks; this is important to speed up the growth of agriculture to meet the needs of a growing population.\n\nThe next phase took place digitally on Autodesk Fusion 360, where more research on technical elements would dictate where we headed as a team. Throughout the project, I honed practical strategies for thinking outside the box when realizing the Indeplant and incorporating its technical and physical components. Multiple iterations of the model were essential to overcome new challenges, and along the way, I advanced my 3D modeling and iterating skills. Our team worked efficiently and well together to realize the product: one person managed the budget, another handled the coding, and I focused on the design. We all contributed ideas and research during our meetings and made changes as needed. This collaboration was crucial to bringing the Indeplant to life.",
+  "processDescription2":"The project faced significant challenges, primarily regarding time and incorporating all necessary elements to realize our vision. Constrained by a $100 budget, our team grappled with how to build from the ground up. The original prototype included glass encasing and cornering LED lights to avoid molding and unsanitary conflicts, especially with technological parts. However, we realized the budget constraints and the spacing available for technical components, prompting us to widen the prototype. To meet our budget, we had to make adjustments – changing the glass encasing to plastic and finding an alternative option to LED UV strips. An important realization was that functionality and cost efficiency took precedence over aesthetics, ensuring the creation of a working prototype for our pitch.\n\nThe final implementation utilizes Arduino UNO (circuit board using a C++ language variation) to automate all components, ultraviolet artificial lighting for photosynthesis, a moisture sensor to detect critical water levels, and a pump for cohesive operation. The pump draws water from a compartment behind the terrarium, consistently connecting a tube to water the plant. Placing the moisture sensor at the bottom of the tank allows it to read the soil's humidity and print out the data. You can find more information in the provided pitch presentation and design report linked below for additional details about the ideation, process, challenges, and outcome.",
 
   "image" : "https://i.imgur.com/R0HvJoT.png",
   "image2": "https://i.imgur.com/0BZdEgL.png",
   "image3": "https://i.imgur.com/ZkiSFQG.png",
   
-  "process1":"https://i.imgur.com/8S9Rzwi.png",
-  "process2":"",
+  "process1":"https://i.imgur.com/YQGd2mX.png",
+  "process2":"https://i.imgur.com/Cb38gxw.png",
   "process3":"",
+  "process5":"https://i.imgur.com/9Cpgn2s.png",
+  "process6":"",
   "processVideo":"https://drive.google.com/file/d/16dvDSt6YyUxKfb7MkQyy4zm7tIx0KZbV/preview",
   
   "tags": "#businesspitch #collaboration #fusion360 #arduino",
@@ -621,7 +629,41 @@ function createProjectPage(incomingJSON) {
 
       newProjectElement.appendChild(newProjectProcessVideo);
     }
+
+  if (incomingJSON["processDescription2"]){
+    let newProjectProcessDescription2 = document.createElement("P");
+    newProjectProcessDescription2.classList.add("description");
+    newProjectProcessDescription2.innerText = incomingJSON["processDescription2"];
+    newProjectElement.appendChild(newProjectProcessDescription2);
   }
+
+  if(incomingJSON["process4"]){
+      let newProjectProcess4 = document.createElement("IMG");
+      newProjectProcess4.classList.add("pageProcess4");
+      newProjectProcess4.src = incomingJSON["process4"];
+      newProjectElement.appendChild(newProjectProcess4);
+    }
+  if(incomingJSON["process5"]){
+      let newProjectProcess5 = document.createElement("IMG");
+      newProjectProcess5.classList.add("pageProcess5");
+      newProjectProcess5.src = incomingJSON["process5"];
+      newProjectElement.appendChild(newProjectProcess5);
+    }
+
+  if (incomingJSON["processDescription3"]){
+    let newProjectProcessDescription3 = document.createElement("P");
+    newProjectProcessDescription3.classList.add("description");
+    newProjectProcessDescription3.innerText = incomingJSON["processDescription3"];
+    newProjectElement.appendChild(newProjectProcessDescription3);
+  }
+
+  if (incomingJSON["processVideo2"]){
+      let newProjectProcessVideo2 = document.createElement("iframe");
+      newProjectProcessVideo2.classList.add("pageProcessVideo2");
+      newProjectProcessVideo2.src = incomingJSON["processVideo2"];
+      newProjectElement.appendChild(newProjectProcessVideo2);
+
+    }
 
    // open project and/or code in new tab
   if (incomingJSON["link"]){
@@ -639,7 +681,9 @@ function createProjectPage(incomingJSON) {
     }
 
     newProjectElement.appendChild(newProjectLink);
-  } 
+  }
+
+}
   
   if (incomingJSON["blueprint"]){
     let newProjectCode = document.createElement("A");
@@ -776,6 +820,7 @@ for (let i = 0; i < coursesCollection.length; i++){
 
     let skillsElement = document.createElement('p');
     skillsElement.classList.add('description');
+    skillsElement.classList.add('descriptionSkills');
     skillsElement.innerHTML = "&#10551; " + courseData.skills;
 
     courseElement.appendChild(headingElement);
