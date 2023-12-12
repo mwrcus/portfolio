@@ -20,6 +20,7 @@
   "link": "",
   "process": "",
   "video":"",
+  "blueprint":"",
 
   "button1":"",
   "button2":""
@@ -43,7 +44,56 @@ let portfolioCollection = [
   
   // ADD IN ORDER MOST RECENT BELOW............
   
-  
+  {
+    "title" : "Online Privacy Awareness",
+    "category" : "code",
+    "id": "onlineprivacyawareness",
+    "description" : "The documentary ‘We Live in Public’ and Jaron Lanier's talk on ‘How the Internet Failed and How to Recreate It’ offered interesting insights into the evolution of online culture, privacy, and its impact on technology and society. It is interesting to see the juxtaposition of the two narratives that shift from exploring the early days of the Internet, marked by optimism and experimentation, to the current world of the Internet dominated by corporate control and commodification of personal data. Today, corporations control the flow of all information as data has become clearer than glass, where your information is just a transaction... he states, ‘We've created a world in which any time two people connect online, it's financed by a third person who believes they can manipulate the first two.’\n\nIn the course of this project, I designed a satirical and juxtaposed website with the goal of raising awareness about online privacy and the subtle yet constant tracking and measurement of personal data—often agreed to unknowingly. The homepage imitates this canvas of freedom in the early days of the internet until you initiate the authentication to Spotify. This leaves the website to simulate an algorithm processing the user's data. Subsequently, ‘fake’ statistics are presented, subtly pointing toward the critical concept of data privacy. By the end of the experience, users gain a heightened understanding of the significance of data protection and how they can curtail the tracking of their online habits.",
+    "processDescription": "An important thing to note is that the website uses Spotify API through JavaScript to authorize the connection between users; however, no data is pulled in real-time. Spotify users are free to simulate the authentication directly from the main page (and for those without Spotify, access the following page by adding ‘callback’ to the end of the URL link).",
+
+    "image" : "https://i.imgur.com/DcQXTHo.png",
+    "image2": "https://i.imgur.com/BDLmFVt.png",
+    "image3": "",
+    
+    "process1":"https://i.imgur.com/AFaiPlK.png",
+    "process2":"",
+    "process3":"",
+    "processVideo":"",
+    
+    "tags": "#webdevelopment #api #data #javascript",
+    "link": "https://mwrcus.github.io/data-through-music/",
+    "blueprint": "https://github.com/mwrcus/data-through-music",
+    "video":"",
+
+    "button1":"WEBSITE SIMULATION",
+    "button2":"CODE"
+  },
+
+  {
+    "title" : "Personal Branding",
+    "category" : "visual",
+    "id": "personalbranding",
+    "description" : "While still in the process of self-discovery as a designer and engineer in my academic journey, I recognize the significance of crafting a personal brand that reflects how I wish to communicate messages and deliver experiences through my projects. For a considerable time, my inspiration has been drawn from Vincent Van Gogh's 'Starry Night' painting, marveling at how each brush stroke and color conveyed his life, thoughts, and emotions. In my exploration of the design realm, I have come to realize the profound and similar importance of infusing intention into design choices.\n\nMy personal branding encompasses the creation of my logo, tagline, and a high-fidelity webpage wireframe for both desktop and mobile versions. The guiding principle behind all my design choices is to convey my willingness to produce designs that challenge the norm. It is through experimentation and the free flow of creativity that I ultimately shape my projects. This rationale is embodied in the personification of creativity through a sail riding waves. Notably, the color of the waves deviates from expectations, taking on a distinctive green color. Much of the interpretation is left to the audience, yet the cohesive flow of the waves, the vectors of the logo, and the consistent theme throughout aim to leave a lasting impression on me as an emerging designer. (Credits for sailboat vector inspiration: @designstuff on Figma).",
+    "processDescription": "",
+
+    "image" : "https://i.imgur.com/36tGMbo.png",
+    "image2": "https://i.imgur.com/hgYo9iU.png",
+    "image3": "https://i.imgur.com/b0DHImY.png",
+    
+    "process1":"https://i.imgur.com/4FO0nkF.png",
+    "process2":"",
+    "process3":"",
+    "processVideo":"",
+    
+    "tags": "#portfolio #graphicdesign #figma",
+    "link": "",
+    "process": "",
+    "video":"",
+
+    "button1":"",
+    "button2":""
+  },
+
   {
     "title" : "Task Management App",
     "category" : "prototype",
@@ -107,9 +157,9 @@ let portfolioCollection = [
     "description" : "Terrestrial Trivia is a web-developed game designed with the goal of successfully answering each question per level. In the event of an incorrect response, users are prompted to restart the level, fostering a learning environment that encourages information retention. As the game progresses, it delves into a more significant issue—climate change—ultimately urging users to take meaningful action.",
     "processDescription": "The initial step in creating this website involved crafting a mood board. I had a clear vision—a trivia game format that not only highlighted a crucial issue but also offered a meaningful takeaway at the end. This project served as both a challenge and an exploration, pushing me to delve deeper into the utilization of flexbox—a critical CSS display setting widely employed in website layouts. While initially challenging to grasp, persistence allowed me to enhance my skills and deepen my understanding of creating a cohesive layout flow.\n\nLooking ahead, for further development, I would opt for Javascript to link a JSON containing questions and answer choices. This approach promises increased time efficiency compared to creating an HTML page for each question.",
 
-    "image" : "https://i.imgur.com/1lKVBnN.png",
-    "image2": "https://i.imgur.com/MIARvfo.png",
-    "image3": "",
+    "image2" : "https://i.imgur.com/1lKVBnN.png",
+    "image3": "https://i.imgur.com/MIARvfo.png",
+    "image": "https://i.imgur.com/GWe2MgG.png",
     
     "process1":"https://i.imgur.com/Igj6CNN.png",
     "process2":"",
@@ -279,7 +329,7 @@ let portfolioCollection = [
     "title" : "Cosmicollide Game",
     "category" : "code",
     "id" : "cosmicollide",
-    "description" : "Cosmicollide, my endless game creation, is not just a source of fun but also a journey through which I honed my object-oriented programming skills using Javascript. Taking inspiration from Flappy Bird, players navigate an astronaut through space, dodging asteroids while collecting vital oxygen tanks to sustain life. On this cosmic adventure, players encounter power-ups that offer benefits like slower speed, invincibility, or extended breath for a few seconds. The more you play, the more adept you become, raising the challenge to surpass your own high score.",
+    "description" : "Cosmicollide, a game I’ve designed with no ending, is not only a source of fun but also a journey through which I honed my object-oriented programming skills using Javascript. Taking inspiration from Flappy Bird, players navigate an astronaut through space, dodging asteroids while collecting vital oxygen tanks to sustain life. On this cosmic adventure, players encounter power-ups that offer benefits like slower speed, invincibility, or extended breath for a few seconds. The more you play, the more adept you become, raising the challenge to surpass your own high score.",
     "image2" : "https://i.imgur.com/3RKqJFb.png",
     "image": "https://i.imgur.com/207uVih.png",
     "image3":"",

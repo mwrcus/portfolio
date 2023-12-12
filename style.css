@@ -260,6 +260,8 @@ justify-content: center;
 
 
 /*mobile and below*/
+
+
 @media only screen and (max-width: 490px){
 
   body{
@@ -310,7 +312,7 @@ justify-content: center;
   }
 
   .thumbnail{
-    height: 25vh !important;
+    height: 22vh !important;
     margin: 0.6vh !important;
   }
 
