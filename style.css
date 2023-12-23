@@ -8,9 +8,9 @@
 
 /*'global variables'*/
 :root {
-  --bar-width: 30%;
+  --bar-width: 29%;
   --containerSpacing: 4vmin;
-  --nav-space: 30%;
+  --nav-space: 29%;
   --padding: 2vh;
   --color: #667F39;
 }
@@ -211,7 +211,7 @@ justify-content: center;
 
 .sideBar a:hover{
   letter-spacing: 1.5px;
-  transition: color 0.5s, letter-spacing 2s;
+  transition: color 0.5s, letter-spacing 2s, border 0.1s;
   transform-origin: right;
 }
 
@@ -254,6 +254,10 @@ justify-content: center;
     width: 100%;
     padding: 0.9vh;
     text-align: center;
+  }
+
+  .social a:hover, .myself a:hover{
+    border: 2px solid var(--color);
   }
 
 
@@ -309,10 +313,11 @@ justify-content: center;
 
   .preview-element{
     filter: grayscale(0%);
+    padding-right: 1.3vh;
   }
 
   .thumbnail{
-    height: 22vh !important;
+    height: 23vh !important;
     margin: 0.6vh !important;
   }
 
