@@ -44,20 +44,74 @@ let portfolioCollection = [
   
   // ADD IN ORDER MOST RECENT BELOW............
   
+
+{
+  "title" : "Animating Practice",
+  "category" : "3d",
+  "id": "unrealanimations",
+  "description" : "Before learning motion capture, I experimented with Unreal Engine and its marketplace. I chose avatars from the internet and rigged them, then used Adobe’s Mixamo to transpose various animations. Within Unreal, I set up 3D environments to cohesively fit the characters and their animations: I learned to transition between animations and utilize the lighting, multiple camera cuts, and keyframes to create short animations. Overall, these experiments turned out well and let me explore a fantastic engine for real-time rendering.",
+  "processDescription": "",
+
+  "image" : "https://i.imgur.com/DyrRXYu.png",
+  "image2": "",
+  "image3": "",
+  
+  "process1":"https://i.imgur.com/cthuDsp.png",
+  "process2":"",
+  "process3":"",
+  "processVideo":"https://drive.google.com/file/d/1zJaWgArPBtvZ9CGVetBQu431A955IMzQ/preview",
+  
+  "tags": "#3denvironment #unrealengine #adobemixamo",
+  "link": "",
+  "process": "",
+  "video":"https://drive.google.com/file/d/1cPCd1Z_f2otBS4AvpeIstyOF6WPh6A_x/preview",
+  "blueprint":"",
+
+  "button1":"",
+  "button2":""
+},
+
+{
+  "title" : "3D Sword",
+  "category" : "3d",
+  "id": "gamesword",
+  "description" : "This project aims to remodel a 3D design based on a 2D reference. I chose a fantasy dagger and carefully paid attention to all the details on multiple planar views. I used Autodesk Maya to remodel, avoiding using n-gons and triangles. Afterward, I correctly mapped the UV to avoid distortion if and when shaded.",
+  "processDescription": "A challenge encountered during this project was modeling inorganic shapes. Some shapes on the dagger involve cracks, wood, and other texturized materials that are virtually impossible to model without sculpting. In that case, I could not include all sorts of indents, ridges, and cracks on the sword.",
+
+  "image" : "https://i.imgur.com/LzeVF4I.png",
+  "image2": "",
+  "image3": "",
+  
+  "process1":"https://i.imgur.com/3MPpDXR.png",
+  "process2":"",
+  "process3":"",
+  "processVideo":"",
+  
+  "tags": "#3dmodeling #uvmapping #autodeskmaya",
+  "link": "",
+  "process": "",
+  "video":"",
+  "blueprint":"",
+
+  "button1":"",
+  "button2":""
+},
+
+
   {
     "title" : "Online Privacy Awareness",
     "category" : "code",
     "id": "onlineprivacyawareness",
     "description" : "The documentary ‘We Live in Public’ and Jaron Lanier's talk on ‘How the Internet Failed and How to Recreate It’ offered interesting insights into the evolution of online culture, privacy, and its impact on technology and society. It is interesting to see the juxtaposition of the two narratives that shift from exploring the early days of the Internet, marked by optimism and experimentation, to the current world of the Internet dominated by corporate control and commodification of personal data. Today, corporations control the flow of all information as data has become clearer than glass, where your information is just a transaction... he states, ‘We've created a world in which any time two people connect online, it's financed by a third person who believes they can manipulate the first two.’\n\nIn the course of this project, I designed a satirical and juxtaposed website with the goal of raising awareness about online privacy and the subtle yet constant tracking and measurement of personal data—often agreed to unknowingly. The homepage imitates this canvas of freedom in the early days of the internet until you initiate the authentication to Spotify. This leaves the website to simulate an algorithm processing the user's data. Subsequently, ‘fake’ statistics are presented, subtly pointing toward the critical concept of data privacy. By the end of the experience, users gain a heightened understanding of the significance of data protection and how they can curtail the tracking of their online habits.",
-    "processDescription": "An important thing to note is that the website uses Spotify API through JavaScript to authorize the connection between users; however, no data is pulled in real-time. Spotify users are free to simulate the authentication directly from the main page (and for those without Spotify, access the following page by adding ‘callback’ to the end of the URL link).",
+    "processDescription": "INSTRUCTIONS TO SIMULATE!\n\nSpotify users are free to simulate the authentication directly from the main page (ATTENTION, for those without Spotify, access the following page by adding ‘callback’ to the end of the URL link of the homepage). An important thing to note is that the website uses Spotify API through JavaScript to authorize the connection between users; however, no data is pulled in real-time.\n\n Below provides the presentation pitch of my project, along with the moodboard I crafted beforehand which I drew inspiration from.",
 
     "image" : "https://i.imgur.com/DcQXTHo.png",
     "image2": "https://i.imgur.com/BDLmFVt.png",
     "image3": "",
     
     "process1":"https://i.imgur.com/AFaiPlK.png",
-    "process2":"",
-    "process3":"",
+    "process2":"https://i.imgur.com/6CdzKLm.png",
+    "process3":"https://i.imgur.com/T8kRf3Z.png",
     "processVideo":"",
     
     "tags": "#webdevelopment #api #data #javascript",
@@ -801,7 +855,7 @@ document.addEventListener('DOMContentLoaded', function() {
       "course": "",
       "concepts":"",
       "skills": ""
-}
+},
 
 */
 
@@ -846,6 +900,18 @@ document.addEventListener('DOMContentLoaded', function() {
       "course": "Web Development",
       "concepts":"",
       "skills": "Git, HTML, CSS, JavaScript, JS Libraries"
+},
+
+{
+      "course": "Motion Capture",
+      "concepts":"",
+      "skills": "Unreal Engine, Autodesk MotionBuilder"
+},
+
+{
+      "course": "3D Modeling",
+      "concepts":"",
+      "skills": "Autodesk Maya, ZBrush, UV Mapping"
 },
 
 
