@@ -946,4 +946,3 @@ for (let i = 0; i < coursesCollection.length; i++){
     coursesListElement.appendChild(courseElement);
   };
 });
-
