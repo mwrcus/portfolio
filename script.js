@@ -48,7 +48,6 @@ let portfolioCollection = [
 {
   "title" : "Motion Capture Animation",
   "category" : "3d",
-  "category2":"film",
   "id": "mocapanimation",
   "description" : "Motion capture technology, widely used in film and video game industries, enables 3D characters to mimic human motion accurately. In this project, I aim to harness this technology to capture my movements and transpose them into a 3D environment, utilizing Unreal Engine as the integrative platform.",
   "processDescription": "The motion capture studio at NYU is equipped with approximately 20 optical-passive OptiTrack cameras. These cameras interface with Motive, a software that exports the motion of either a rigid or solid body. For this project, I strategically placed 41 markers on my solid body to ensure precise tracking of my movements. The recorded motion data was then exported to Autodesk MotionBuilder. Here, I baked the skeleton onto an avatar that I had rigged using Adobe Mixamo.\n\nIn Unreal Engine, I created a 3D environment and set up lighting to harmonize with my character’s animation and aesthetic. I learned to transition between camera cuts and keyframes, which enabled me to produce a short animation.\n\nOne challenge I faced during this project was the need to re-keyframe the avatar to the ground due to the uneven floor surface. While this was not a significant issue for this project, it could have posed a problem if I had used multiple motion capture data sets to transition between movements. Despite this challenge, the project was a success, allowing me to explore the capabilities of Unreal Engine, a powerful tool for real-time rendering.",
@@ -550,13 +549,6 @@ document.addEventListener("DOMContentLoaded", function() {
       pageTitleElement.innerText = "EXPERIMENTATIONS";
     }
 
-    // second category (in case)
-    for (let i = 0; i < portfolioCollection.length; i++) {
-      if (portfolioCollection[i]["category2"] == urlSection || urlSection == "" || urlSection == null) {
-        createProjectPreview(portfolioCollection[i]);
-        projectsFound = true;
-      }
-    }
     //thumbnails
     for (let i = 0; i < portfolioCollection.length; i++) {
       if (portfolioCollection[i]["category"] == urlSection || urlSection == "" || urlSection == null) {

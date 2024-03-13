@@ -335,7 +335,7 @@ justify-content: center;
 
   .thumbnail{
     height: 12rem !important;
-    margin: .1rem !important;
+    margin: 0rem !important;
   }
 
   .link, .code{
