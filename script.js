@@ -60,12 +60,12 @@ let portfolioCollection = [
   "process1":"https://i.imgur.com/6DoQcI2.png",
   "process2":"",
   "process3":"",
-  "processVideo":"https://drive.google.com/file/d/1EpqftYjykgec9T1XcP8NEw4kZJyJOF45/view?usp=sharing",
+  "processVideo":"https://drive.google.com/file/d/1EpqftYjykgec9T1XcP8NEw4kZJyJOF45/preview",
   
   "tags": "#3d #unrealengine #autodeskmotionbuilder",
   "link": "",
   "process": "",
-  "video":"https://drive.google.com/file/d/1edBuj-wXLdvOIOw_tRbW3sIwk2qkCATN/view?usp=sharing",
+  "video":"https://drive.google.com/file/d/1edBuj-wXLdvOIOw_tRbW3sIwk2qkCATN/preview",
   "blueprint":"",
 
   "button1":"",
@@ -91,7 +91,7 @@ let portfolioCollection = [
   "tags": "#3dmodeling #uvmapping #autodeskmaya",
   "link": "",
   "process": "",
-  "video":"https://drive.google.com/file/d/179o_SQgMO_PY6231LMhojmhBmGKYdsbi/view?usp=sharing",
+  "video":"https://drive.google.com/file/d/179o_SQgMO_PY6231LMhojmhBmGKYdsbi/preview",
   "blueprint":"",
 
   "button1":"",
