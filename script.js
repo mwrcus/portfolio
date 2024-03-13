@@ -46,25 +46,26 @@ let portfolioCollection = [
   
 
 {
-  "title" : "Animating Practice",
+  "title" : "Motion Capture Animation",
   "category" : "3d",
-  "id": "unrealanimations",
-  "description" : "Before learning motion capture, I experimented with Unreal Engine and its marketplace. I chose avatars from the internet and rigged them, then used Adobe’s Mixamo to transpose various animations. Within Unreal, I set up 3D environments to cohesively fit the characters and their animations: I learned to transition between animations and utilize the lighting, multiple camera cuts, and keyframes to create short animations. Overall, these experiments turned out well and let me explore a fantastic engine for real-time rendering.",
-  "processDescription": "",
+  "category2":"film",
+  "id": "mocapanimation",
+  "description" : "Motion capture technology, widely used in film and video game industries, enables 3D characters to mimic human motion accurately. In this project, I aim to harness this technology to capture my movements and transpose them into a 3D environment, utilizing Unreal Engine as the integrative platform.",
+  "processDescription": "The motion capture studio at NYU is equipped with approximately 20 optical-passive OptiTrack cameras. These cameras interface with Motive, a software that exports the motion of either a rigid or solid body. For this project, I strategically placed 41 markers on my solid body to ensure precise tracking of my movements. The recorded motion data was then exported to Autodesk MotionBuilder. Here, I baked the skeleton onto an avatar that I had rigged using Adobe Mixamo.\n\nIn Unreal Engine, I created a 3D environment and set up lighting to harmonize with my character’s animation and aesthetic. I learned to transition between camera cuts and keyframes, which enabled me to produce a short animation.\n\nOne challenge I faced during this project was the need to re-keyframe the avatar to the ground due to the uneven floor surface. While this was not a significant issue for this project, it could have posed a problem if I had used multiple motion capture data sets to transition between movements. Despite this challenge, the project was a success, allowing me to explore the capabilities of Unreal Engine, a powerful tool for real-time rendering.",
 
-  "image" : "https://i.imgur.com/DyrRXYu.png",
+  "image" : "https://i.imgur.com/bEWe035.png",
   "image2": "",
   "image3": "",
   
-  "process1":"https://i.imgur.com/cthuDsp.png",
+  "process1":"https://i.imgur.com/6DoQcI2.png",
   "process2":"",
   "process3":"",
-  "processVideo":"https://drive.google.com/file/d/1zJaWgArPBtvZ9CGVetBQu431A955IMzQ/preview",
+  "processVideo":"https://drive.google.com/file/d/1EpqftYjykgec9T1XcP8NEw4kZJyJOF45/view?usp=sharing",
   
-  "tags": "#3denvironment #unrealengine #adobemixamo",
+  "tags": "#3d #unrealengine #autodeskmotionbuilder",
   "link": "",
   "process": "",
-  "video":"https://drive.google.com/file/d/1cPCd1Z_f2otBS4AvpeIstyOF6WPh6A_x/preview",
+  "video":"https://drive.google.com/file/d/1edBuj-wXLdvOIOw_tRbW3sIwk2qkCATN/view?usp=sharing",
   "blueprint":"",
 
   "button1":"",
@@ -72,25 +73,25 @@ let portfolioCollection = [
 },
 
 {
-  "title" : "3D Sword",
+  "title" : "Sword Model",
   "category" : "3d",
   "id": "gamesword",
   "description" : "This project aims to remodel a 3D design based on a 2D reference. I chose a fantasy dagger and carefully paid attention to all the details on multiple planar views. I used Autodesk Maya to remodel, avoiding using n-gons and triangles. Afterward, I correctly mapped the UV to avoid distortion if and when shaded.",
   "processDescription": "A challenge encountered during this project was modeling inorganic shapes. Some shapes on the dagger involve cracks, wood, and other texturized materials that are virtually impossible to model without sculpting. In that case, I could not include all sorts of indents, ridges, and cracks on the sword.",
 
-  "image" : "https://i.imgur.com/LzeVF4I.png",
+  "image" : "https://i.imgur.com/Zi28qDl.png",
   "image2": "",
   "image3": "",
   
-  "process1":"https://i.imgur.com/3MPpDXR.png",
-  "process2":"",
-  "process3":"",
+  "process2":"https://i.imgur.com/9Wsbvuj.png",
+  "process3":"https://i.imgur.com/D2uwwMS.png",
+  "process1":"https://i.imgur.com/Zi28qDl.png",
   "processVideo":"",
   
   "tags": "#3dmodeling #uvmapping #autodeskmaya",
   "link": "",
   "process": "",
-  "video":"",
+  "video":"https://drive.google.com/file/d/179o_SQgMO_PY6231LMhojmhBmGKYdsbi/view?usp=sharing",
   "blueprint":"",
 
   "button1":"",
@@ -127,7 +128,7 @@ let portfolioCollection = [
     "title" : "Personal Branding",
     "category" : "visual",
     "id": "personalbranding",
-    "description" : "While still in the process of self-discovery as a designer and engineer in my academic journey, I recognize the significance of crafting a personal brand that reflects how I wish to communicate messages and deliver experiences through my projects. For a considerable time, my inspiration has been drawn from Vincent Van Gogh's 'Starry Night' painting, marveling at how each brush stroke and color conveyed his life, thoughts, and emotions. In my exploration of the design realm, I have come to realize the profound and similar importance of infusing intention into design choices.\n\nMy personal branding encompasses the creation of my logo, tagline, and a high-fidelity webpage wireframe for both desktop and mobile versions. The guiding principle behind all my design choices is to convey my willingness to produce designs that challenge the norm. It is through experimentation and the free flow of creativity that I ultimately shape my projects. This rationale is embodied in the personification of creativity through a sail riding waves. Notably, the color of the waves deviates from expectations, taking on a distinctive green color. Much of the interpretation is left to the audience, yet the cohesive flow of the waves, the vectors of the logo, and the consistent theme throughout aim to leave a lasting impression on me as an emerging designer. (Credits for sailboat vector inspiration: @designstuff on Figma).",
+    "description" : "While still in the process of self-discovery as a designer and engineer in my academic journey, I recognize the significance of crafting a personal brand that reflects how I wish to communicate messages and deliver experiences through my projects. For a considerable time, my inspiration has been drawn from Vincent Van Gogh's 'Starry Night' painting, marveling at how each brush stroke and color conveyed his life, thoughts, and emotions. In my exploration of the design realm, I have come to realize the profound and similar importance of infusing intention into design choices.\n\nMy personal branding encompasses the creation of my logo, tagline, and a high-fidelity webpage wireframe for both desktop and mobile versions. The guiding principle behind all my design choices is to convey my willingness to produce designs that challenge the norm. It is through experimentation and the free flow of creativity that I ultimately shape my projects. This rationale is embodied in the personification of creativity through a sail riding waves. Notably, the color of the waves deviates from expectations, taking on a distinctive green color. Much of the interpretation is left to the audience, yet the cohesive flow of the waves, the vectors of the logo, and the consistent theme throughout aim to leave a lasting impression on me as an emerging designer.",
     "processDescription": "",
 
     "image" : "https://i.imgur.com/36tGMbo.png",
@@ -549,6 +550,13 @@ document.addEventListener("DOMContentLoaded", function() {
       pageTitleElement.innerText = "EXPERIMENTATIONS";
     }
 
+    // second category (in case)
+    for (let i = 0; i < portfolioCollection.length; i++) {
+      if (portfolioCollection[i]["category2"] == urlSection || urlSection == "" || urlSection == null) {
+        createProjectPreview(portfolioCollection[i]);
+        projectsFound = true;
+      }
+    }
     //thumbnails
     for (let i = 0; i < portfolioCollection.length; i++) {
       if (portfolioCollection[i]["category"] == urlSection || urlSection == "" || urlSection == null) {
@@ -911,7 +919,7 @@ document.addEventListener('DOMContentLoaded', function() {
 {
       "course": "3D Modeling",
       "concepts":"",
-      "skills": "Autodesk Maya, ZBrush, UV Mapping"
+      "skills": "Autodesk Maya, UV Mapping"
 },
 
 
